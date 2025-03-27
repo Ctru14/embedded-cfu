@@ -23,7 +23,7 @@ pub struct FwVersion {
     pub major: u8,
 }
 
-// Explicit conversions for FwVersion and u32
+// Explicit LSB conversions for FwVersion and u32
 impl FwVersion {
     pub fn new(fw_version: u32) -> Self {
         Self {
